@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="cordova.js"></script>
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="scrpit.js">
+    </script>
+</head>
+<body>
+	<h1>NSA 2.0</h1>
+    <h2>Cadastrar</h2>
+    <label for="txt_rm">RM do Aluno:</label>
+    <input type="text" id="txt_rm" placeholder="RM Aluno"><br>
+    <label for="txt_nome">Nome do Aluno:</label>
+    <input type="text" id="txt_nome" placeholder="Nome Aluno">
+    <input type="button" id="btn_cadastrar" value="Cadastrar" onclick="cadastrar()">
+    <h2>Pesquisar</h2>
+    <label for="pesquisar_RM">Pesquisar:</label>
+    <input type="text" id="pesquisar_RM" placeholder="Insira o RM para consultar">
+    <input type="button" id="btn_pesquisar" value="Pesquisar" onclick="pesquisar()">
+
+    <h3 id="visor"></h3>
+</body>
+</html>
